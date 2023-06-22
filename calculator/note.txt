@@ -1,0 +1,25 @@
+The given code is a JavaScript implementation of a calculator functionality using HTML and DOM manipulation. Here's a breakdown of what the code does:
+
+1. The code starts by selecting the calculator buttons using the `document.querySelector('.calculator-buttons')` method and assigns it to the `keys` constant.
+
+2. An event listener is added to the `keys` element, listening for a click event. When a button within the `keys` element is clicked, the event handler function is executed.
+
+3. Inside the event handler, the clicked button's value is extracted using destructuring assignment (`const { value } = target`).
+
+4. The value of the clicked button is checked using a conditional statement. If the target element is not a button, the function returns early. Otherwise, it proceeds with the switch statement to handle different button inputs.
+
+5. The switch statement handles different button inputs:
+   - When the "=" button is clicked, the `calcAnswer` method is called with the current `displayText` as an argument.
+   - When the "AC" button is clicked, the `clearAll` method is called to reset the calculator.
+   - When the "." button is clicked, it checks if the `displayText` is "0" and handles it accordingly.
+   - For all other buttons, the `addText` method is called with the clicked button's value.
+
+6. The `addText` method handles adding the input value to the `displayText` property. It checks if the `displayText` is "0" and replaces it if necessary. If `prevTotal` is not null, it means a previous calculation was performed, so it sets the `displayText` to the `prevTotal` and resets `prevTotal` to null. Then, it checks for invalid sequences and adds the input value to the `displayText`. Finally, it calls the `outputText` method to display the `displayText` on the calculator screen.
+
+7. The `outputText` method updates the calculator screen by setting the value of the `.calculator-screen` element to the provided text.
+
+8. The `calcAnswer` method takes an equation as an argument, evaluates it using the `Function` constructor, and stores the result. The result is then displayed on the calculator screen using the `outputText` method.
+
+9. The `clearAll` method resets the calculator by setting the `displayText` to "0", `prevTotal` to null, and updating the calculator screen using the `outputText` method.
+
+Overall, this code provides the basic functionality of a calculator, allowing users to input values, perform calculations, and clear the screen.
