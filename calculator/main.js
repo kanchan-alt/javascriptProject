@@ -29,8 +29,9 @@ const keys = document.querySelector('.calculator-buttons')
         return;
     }else{
         // console.log(target/even/value)(tag/object/button number)
+         console.log(value)
         calculator.parseInput(value)
-        // console.log(value)
+       
          
     }
 

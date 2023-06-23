@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form validation</title>
+</head>
+<body>
+   
+        <h1>Form validation with taskDescription</h1>
+        
+        <form id="formId" onsubmit="return validation()">
+           
+                <div>
+                    <label for="firstname">First name: </label>
+                    <input type="text" id="firstname" name="firstname" placeholder=" Enter Firstname">
+                    <span id="userFirstNameError"></span>
+                </div>
+                
+                <div>
+                    <label for="lastname">Last name: </label>
+                    <input type="text"  id="lastname"  name="lastname" placeholder=" Enter Lastname">
+                    <span id="userLastNameError"></span>
+                </div>
+                
+               <div>
+                <label for="email">email Id: </label>
+                <input type="email"  id="email"  name="email" 
+                placeholder=" Enter Email">
+                <span id="userEmailError"></span>
+                </div>
+               </div>
+                
+                <div>
+                    <label for="password">password: </label>
+                    <input type="password"   id="password" name="password"  placeholder=" Enter password">
+                   <span id="userPasswordError"></span>
+                </div>
+
+                
+                
+         
+          <button type="submit">Login</button>
+
+        </form>
+
+
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>
