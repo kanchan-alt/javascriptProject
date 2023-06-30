@@ -1,0 +1,59 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+.task-list{
+    border: 2px solid red;
+    
+}
+
+.list-name{
+    border: 3px solid yellow;
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    gap:1rem
+   
+}
+
+p{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    background-color: rgb(232, 166, 119);
+   
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0 1.6rem;
+    color: azure;
+}
+
+
+.task-edit{
+    
+    background-color: rgb(39, 218, 152);
+}
+
+.task-done{
+    background-color: rgb(136, 147, 143);
+  
+}
+.task-delete{
+    background-color: rgb(212, 53, 17);
+}
+
+.task-complted{
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+    
+}
