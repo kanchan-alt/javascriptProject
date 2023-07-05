@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+   position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    width: 80vmin;
+   
+   
+    
+   
+}
+
+/* .containerTop{
+ border: 1px solid rgb(182, 114, 250);
+
+  
+    
+} */
+
+.containerTop h1{
+    text-align: center;
+    color: rgb(127, 21, 159);
+    font-size: 4vmin;
+    margin: 0.5em 0;
+}
+
+.containerTop p{
+    text-align: center;
+    line-height: 1em;
+    font-size: 3vmin;
+    margin-bottom: 1em;
+    padding: 1em;
+    color: rgb(223, 87, 110);
+}
+
+.containerTop h4{
+    text-align: end;
+    margin: 0.3em 0;
+    color: rgb(226, 43, 43);
+    font-size: 2.5vmin;
+}
+
+
+.containerBottom{
+    display: flex;
+    justify-content: space-between;
+     /* border: 1px solid salmon; */
+     margin-top: 0.2em;
+   
+}
+
+.extaFeactures{
+    
+    display: flex;
+    gap: 0.8em;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.extaFeacture{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background: rgb(236, 100, 100);
+   
+    
+}
+
+span{
+    position: relative;
+    top: 1em;
+    left: 1em;
+    color: white;
+}
+
+button{
+    border: none;
+    background-color: rgb(155, 119, 189);
+    color: white;
+    border-radius: 2rem;
+    padding: 0.7rem;
+    font-size: 1.5vmin;
+}
