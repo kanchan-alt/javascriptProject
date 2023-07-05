@@ -21,8 +21,32 @@ async function randomQuote(){
     console.log(data);
     quoteText.innerText = data.content;
     authorName.innerText = data.author;
-    
+
     quoteBtn.classList.remove("loading");
     quoteBtn.innerText = "New Quote";
 
 }
+
+
+
+speechBtn.addEventListener("click", ()=>{
+    if(!quoteBtn.classList.contains("loading")){
+        let utterance = new SpeechSynthesisUtterance(`${quoteText.innerText} by ${authorName.innerText}`);
+        synth.speak(utterance);
+        setInterval(()=>{
+            !synth.speaking ? speechBtn.classList.remove("active") : speechBtn.classList.add("active");
+        }, 1000);
+    }
+    
+});
+
+
+copyBtn.addEventListener("click", ()=>{
+    navigator.clipboard.writeText(quoteText.innerText);
+});
+
+
+twitterBtn.addEventListener("click", ()=>{
+    let tweetUrl = `https://twitter.com/intent/tweet?url=${quoteText.innerText}`;
+    window.open(tweetUrl, "_blank");
+});
