@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border: none;
+    border-radius: 1em;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.dark{
+    background-color:white;
+    color: black;
+}
