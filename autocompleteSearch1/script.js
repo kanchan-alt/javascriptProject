@@ -36,8 +36,10 @@ let searchable = [
 
 
 const searchInput = document.getElementById('search');
+console.log(searchInput);
 const searchWrapper = document.querySelector('.wrapper');
 const resultsWrapper = document.querySelector('.results');
+
 
 
 
@@ -50,7 +52,7 @@ searchInput.addEventListener('keyup', () => {
         return item.toLowerCase().includes(input.toLowerCase());
       });
     }
-    console.log(results);
+    // console.log(results);
     renderResults(results);
   });
 
@@ -66,11 +68,37 @@ function renderResults(results) {
         return `<li>${item}</li>`;
       })
       .join('');
+
   
     searchWrapper.classList.add('show');
     resultsWrapper.innerHTML = `<ul>${content}</ul>`;
-    
+
+    selectedItems(resultsWrapper)
   } 
+
+function selectedItems(resultsWrapper){
+console.log(resultsWrapper);
+const li = document.querySelectorAll('li')
+console.log(li);
+
+[...li].forEach((item => {
+  item.addEventListener('click', ()=> {
+    const seletedItem = item.innerText
+    console.log(seletedItem);
+    searchInput.value = seletedItem;
+    searchWrapper.classList.remove('show');
+
+   
+  })
+}))
+
+
+
+
+
+
+}
+  
 
 
 
