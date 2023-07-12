@@ -77,17 +77,17 @@ function renderResults(results) {
   } 
 
 function selectedItems(resultsWrapper){
-console.log(resultsWrapper);
-const li = document.querySelectorAll('li')
-console.log(li);
+   console.log(resultsWrapper);
+   const li = document.querySelectorAll('li')
+   console.log(li);
 
-[...li].forEach((item => {
-  item.addEventListener('click', ()=> {
-    const seletedItem = item.innerText
-    console.log(seletedItem);
-    searchInput.value = seletedItem;
-    searchWrapper.classList.remove('show');
-
+   [...li].forEach((item => {
+      item.addEventListener('click', ()=> {
+      const seletedItem = item.innerText
+      console.log(seletedItem);
+     searchInput.value = seletedItem;
+     searchWrapper.classList.remove('show');
+ 
    
   })
 }))
