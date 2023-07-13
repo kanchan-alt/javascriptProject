@@ -32,7 +32,7 @@ let user = {
 //   console.log(user.name); // John
 
 /**
- * how for loop for object
+ * how for loop for object ( for in)
  */
 for (let value in user) {
     // keys
