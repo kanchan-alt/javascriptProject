@@ -11,9 +11,24 @@
      4.Using .reduce()
  */
 
+     /**
+      * 
+      * The separator would be an empty string.
+      * example:- const str = 'I love free';
+      * str.split('')
+      * output:- ['I', ' ', 'l','o',v','e',' ','f','r','e','e']
+      * 
+      * If I wanted to change it so the string is split up into individual words, then the separator would be an empty string with a space.
+      * str.split(' ')
+      * ['i','love', 'free']
+      * 
+      * 
+      */
+
 
      function reverseString(text) {
-        console.log(text);
+        // console.log(text);
+        console.log([...text]);
         console.log(text.split(""));
         console.log(text.split("").reverse());
 
