@@ -20,3 +20,33 @@ let age = 30;
 
 let statement = "You can't be paralyzed by fear of failure or you will never push yourself."
 // console.log(statement.toUpperCase())
+
+
+let  includesWord = "You can't be  Script by fear of failure or you will never push yourself"
+
+// console.log(includesWord.includes("Script"));
+
+
+let spliting = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+// console.log(spliting.split(''));
+
+
+
+let text = "This is a first script, and there is another script later in the text. This is the last occurrence of the script.";
+
+let lastOccurrenceIndex = text.lastIndexOf("script");
+// let firstccurrenceIndex = text.indexOf("script");
+
+// console.log("Last occurrence position:", lastOccurrenceIndex);
+// console.log("first occurrence position:", firstccurrenceIndex);
+
+
+let findOccuuenceBeacause = 'You cannot end a sentence with because because because is a conjunction'
+let firstOccurrenceIndex = findOccuuenceBeacause.indexOf("because");
+console.log(`find Occuuence Word  because is at index ${firstOccurrenceIndex}`)
+
+
+let beforeTrim = "   Do something today that your future self will thank you for.   "
+let afterTrim = beforeTrim.trim()
+ console.log( beforeTrim)
+ console.log(afterTrim)

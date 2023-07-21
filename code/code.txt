@@ -28,20 +28,46 @@ let statement = "You can't be paralyzed by fear of failure or you will never pus
 console.log(statement.toUpperCase())
 
 4. Check if the string contains a word Script using includes() method.
+
    let  includesWord = "You can't be  Script by fear of failure or you will never push yourself"
+   console.log(includesWord.includes("Script"));
+
+   
 
 
 5. Split the string into an array using split() method
     let user5 = 'i love india';
     console.log(user5.split(" "));
 
+
 6. 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
 
+     let spliting = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+      console.log(spliting.split(''));
+
 7. Use lastIndexOf to determine the position of the last occurrence of a script.
+    
+      let text = "This is a first script, and there is another script later in the text. This is the last occurrence of the script.";
+
+      let lastOccurrenceIndex = text.lastIndexOf("script");
+
+      console.log("Last occurrence position:", lastOccurrenceIndex);
+
 
 8. Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'.
 
+let findOccuuenceBeacause = 'You cannot end a sentence with because because because is a conjunction'
+let firstOccurrenceIndex = findOccuuenceBeacause.indexOf("because");
+console.log(`find Occuuence Word  because is at index ${firstOccurrenceIndex}`)
+
+
 9. Use trim() to remove any trailing whitespace at the beginning and the end of a string.
+ 
+ let beforeTrim = "   Do something today that your future self will thank you for.   "
+let afterTrim = beforeTrim.trim()
+ console.log( beforeTrim)
+ console.log(afterTrim)
+
 
 10. Boolean value is either true or false.
     - Write three JavaScript statement which provide truthy value.
