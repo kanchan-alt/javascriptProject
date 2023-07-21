@@ -57,59 +57,81 @@ let afterTrim = beforeTrim.trim()
 
  - 4 > 3
    // -4 is indeed less than 3, so the expression is false.
-    console.log(-4 > 3);//false
+    // console.log(-4 > 3);//false
 
 - 4 >= 3
 // -4 is indeed less than equal than  3, so the expression is false.
-    console.log(-4 >= 3);//false
+    // console.log(-4 >= 3);//false
 
 - 4 < 3
 // -4 is indeed less than  than  3, so the expression is true.
-console.log(-4 < 3);//true
+// console.log(-4 < 3);//true
 
 - 4 <= 3
 // -4 is indeed less than equal than  3, so the expression is true.
-console.log(-4 <= 3);//true
+// console.log(-4 <= 3);//true
 
 - 4 == 4
 // they are different numbers with different numerical values. so the expression is false.
-console.log(-4 == 4);//false
+// console.log(-4 == 4);//false
 
 - 4 === 4
 // In the case of "-4 === 4", the statement is false. The value of -4 is not equal to 4, and their types are also different (one is a negative integer, and the other is a positive integer). So, the strict equality comparison returns false..
-console.log(-4 === 4);//false
+// console.log(-4 === 4);//false
 
 
 - 4 != 4
 // The statement "-4 != 4" is true. The "!=" operator checks for inequality, and it returns true when the two values being compared are not equal. In this case, -4 is not equal to 4, so the statement is true..
-console.log(-4 != 4);//true
+// console.log(-4 != 4);//true
 
 
 - 4 !== 4
 // The statement "4 !== 4" is false. The "!=="" operator is used for strict inequality comparison, which means it checks both the values and types of the operands. In this case, both operands are the number 4 and -4, and they have the diff value and type (both are numbers), so the strict inequality comparison returns true
 
-console.log(-4 !== 4);//true
+// console.log(-4 !== 4);//true
 
 
 - 4 != '4'
 // -4 is not equal to string '4', so the expression is true.
-console.log(-4 != 4);//true
+// console.log(-4 != 4);//true
 
 - 4 == '4'
 // -4  and  4 are total different value, so the expression is false.
-console.log(-4 == 4);//false
+// console.log(-4 == 4);//false
 
 
 - 4 === '4'
 // -4 and 4 are total different value and type are number(both) bez of strict inequality comparison, so the expression is false.
-console.log(-4 === 4);//false
+// console.log(-4 === 4);//false
 
 // Find the length of python and jargon and make a falsy comparison statement.
 
 let python ="python"
-console.log(python.length);
+// console.log(python.length);
 let jargon ="jargon"
-console.log(python.length);
- python === jargon
+// console.log(python.length);
+//  python === jargon
+
+
+/**
+ * Use the Date object to do the following activities
+    - What is the year today?
+    - What is the month today as a number?
+    - What is the date today?
+    - What is the day today as a number?
+    - What is the hours now?
+    - What is the minutes now?
+    - Find out the numbers of seconds elapsed from January 1, 1970 to now.
+ */
+
+    let date = new Date()
+    // console.log(date);
+    // console.log(`Year: ${date.getFullYear()}`);
+    // console.log(`Month: ${date.getMonth()} in number`);
+    // console.log(`Day: ${date.getDay()} in number`);
+    // console.log(`Date: ${date.getDate()}`);
+    // console.log(`Hour: ${date.getHours()}`);
+    // console.log(`Minute: ${date.getMinutes()}`);
+    // console.log(`Time in milisecond since 1 jan 1970 : ${date.getTime()}`);
 
 
