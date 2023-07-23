@@ -1,3 +1,8 @@
+/**
+ * 
+26. In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
+ */
+
 const countryList = [
 	"Afghanistan",
 	"Albania",
@@ -250,8 +255,9 @@ const countryList = [
 	"Åland Islands"
 ];
 
-export default countryList;
 
+//Ethiopia
 
-// module.exports = countryList;
+let check = countryList.includes("Ethiopia");
 
+check ? console.log("ETHIOPIA"): console.log("notETHIOPIA")

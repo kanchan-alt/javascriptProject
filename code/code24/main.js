@@ -3,12 +3,12 @@
  */
 
 
-// import countryList from "./countries";
-// import webTechs from "./web_techs";
+import countryList from "./countries";
+import webTechs from "./web_techs";
 
 
-const countryList = require('./countries');
-const webTechs = require('./web_techs');
+// const countryList = require('./countries');
+// const webTechs = require('./web_techs');
 
 
 console.log("Countries:", countryList);
