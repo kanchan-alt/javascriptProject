@@ -1,0 +1,11 @@
+grid-template-columns:  repeat(4, 1fr ) ;//4col
+grid-template-columns:  repeat(4, 1fr 2fr) ;//8col
+grid-template-columns:  repeat(4, 1fr 2fr 3fr) ;
+//12col
+grid-template-columns: 100px repeat(2, 1fr auto) 200px;//6columns
+
+
+grid-template-columns: 100px repeat(2, 1fr auto) 200px repeat(2, 5fr);
+
+
+Where we have four columns so how I could normally do that is something like great template columns one FR four times and that give us I forgot 4 there we go that he was 4 column each 20 pixels space apart. what I can do that I just type the repeat function and then repeat function take to think first how many times you want to repeat it 1fr and what you would like to repeat.
